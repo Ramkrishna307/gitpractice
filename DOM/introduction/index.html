@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        boby{
+            padding:40px;
+        }
+    button{
+        display: block;
+    }
+
+    </style>
+</head>
+<body>
+    <h1> I am DoOM</h1>
+    <p>practicing the DOM with my high effort</p>
+    <img src="http://www.shadowsphotography.co/wp-content/uploads/2017/12/photography-01-800x400.jpg" alt="">
+
+    <button onclick="color()">Click Me</button>
+
+    <script>
+
+        // changing the html content
+        let h1=document.querySelector("h1");
+        h1.innerHTML="H1 is chnaged Wooo";
+
+        // chnaging css style
+         h1.style.color="Red";
+        
+         //we can change attribute value
+         let img=document.querySelector("img");
+         img.src="https://www.dreamnighttours.ae/uploads/images/tours/slider/584197_dubai-img-worlds-novocinema.jpg";
+
+         //remove element
+         img.remove();
+
+         //Add element
+         let div=document.createElement("div");
+         div.innerHTML="Hello I am there";
+         let body=document.querySelector('body');
+         body.appendChild(div);
+
+         //create events
+         function color(){
+            let b=document.querySelector('body');
+            b.style.backgroundColor="Blue";
+         }
+    </script>
+</body>
+</html>

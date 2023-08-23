@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Reandering page using Dom
+    </h1>
+    <button onclick="opentab()">Click me</button>
+
+    <script>
+       
+
+        function opentab(){
+            let url="https://www.youtube.com/watch?v=8mGuT9uZnfI&list=PL-h5aNeRKouHXl_MFnQvwz2g-7ou5b-Be&index=12";
+
+            let openTab=open(url,"","width=400px,height=900px");
+
+            setTimeout(
+                ()=>{
+                    openTab.close();
+
+                },3000
+            )
+
+        }
+    </script>
+</body>
+</html>
